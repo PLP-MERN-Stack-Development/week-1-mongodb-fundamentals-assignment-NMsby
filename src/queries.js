@@ -379,7 +379,7 @@ async function runAllQueries() {
     }
 }
 
-// Export functions for testing (required by autograding)
+// Export functions for testing
 module.exports = {
     findBooksByGenre,
     findBooksAfterYear,

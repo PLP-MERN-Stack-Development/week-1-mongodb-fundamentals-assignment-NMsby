@@ -1,5 +1,35 @@
 {
+  "name": "mongodb-fundamentals-assignment",
+  "version": "1.0.0",
+  "description": "MongoDB fundamentals assignment demonstrating CRUD operations, aggregation, and indexing",
+  "main": "src/queries.js",
+  "scripts": {
+    "start": "node src/queries.js",
+    "populate": "node src/insert_books.js",
+    "test": "node src/queries.js",
+    "setup": "npm install && npm run populate",
+    "clean": "rm -rf node_modules package-lock.json",
+    "reinstall": "npm run clean && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PLP-MERN-Stack-Development/week-1-mongodb-fundamentals-assignment-NMsby.git"
+  },
+  "keywords": [
+    "mongodb",
+    "database",
+    "crud",
+    "aggregation",
+    "indexing",
+    "nodejs"
+  ],
+  "author": "Nelson Masbayi nmsby.dev@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "mongodb": "^6.18.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }
